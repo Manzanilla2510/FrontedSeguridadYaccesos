@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Personas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+
+  <nav class="menu">
+    <a href="main.html">Inicio</a>
+    <a href="personas.html">Personas</a>
+    <a href="roles.html">Roles</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- ===================== -->
+  <!-- 👤 PERSONAS (GET) -->
+  <!-- ===================== -->
+  <h2>Personas Registradas</h2>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Tipo</th>
+        <th>Fecha Registro</th>
+      </tr>
+    </thead>
+    <tbody id="tablaPersonas"></tbody>
+  </table>
+
+  <br><br>
+
+  <!-- ===================== -->
+  <!-- 🔗 ASIGNAR ROL (POST) -->
+  <!-- ===================== -->
+  <h2>Asignar Rol a Persona</h2>
+
+  <div class="form">
+    <input type="text" id="codigoRol" placeholder="Código Rol (ROL-4)">
+    <input type="text" id="codigoPersona" placeholder="Código Persona (IDE-6)">
+    <button onclick="asignarRol()">Asignar</button>
+  </div>
+
+  <br><br>
+
+  <!-- ===================== -->
+  <!-- 📋 ROLES ASIGNADOS (GET) -->
+  <!-- ===================== -->
+  <h2>Roles Asignados</h2>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Persona</th>
+        <th>Tipo Persona</th>
+        <th>Rol</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaRoles"></tbody>
+  </table>
+
+</div>
+
+<script src="js/persona.js" defer></script>
+
+</body>
+</html>

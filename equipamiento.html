@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipamiento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+  <nav class="menu">
+    <a href="main.html">Inicio</a>
+    <a href="personas.html">Personas</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="dispositivos.html">Dispositivos</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h2>Registrar Equipamiento</h2>
+
+  <div class="form">
+    <input type="text" id="codigo" placeholder="Código">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="descripcion" placeholder="Descripción">
+
+    <button onclick="guardarEquipamiento()">Guardar</button>
+  </div>
+
+  <br>
+
+  <!-- ===================== -->
+  <!-- EQUIPAMIENTOS -->
+  <!-- ===================== -->
+  <h2>Equipamientos</h2>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaEquipamiento"></tbody>
+  </table>
+
+  <br><br>
+
+  <!-- ===================== -->
+  <!-- ASIGNACIONES -->
+  <!-- ===================== -->
+  <h2>Asignaciones de Equipamiento</h2>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Equipamiento</th>
+        <th>Fecha Asignación</th>
+        <th>Identidad</th>
+        <th>Código Identidad</th>
+      </tr>
+    </thead>
+    <tbody id="tablaAsignaciones"></tbody>
+  </table>
+
+</div>
+
+<script src="js/equipamiento.js" defer></script>
+
+</body>
+</html>

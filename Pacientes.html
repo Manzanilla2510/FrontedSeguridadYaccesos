@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enfermeras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+
+  <nav class="menu">
+    <a href="main.html">Inicio</a>
+    <a href="personas.html">Personas</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="dispositivos.html">Dispositivos</a>
+    <a href="equipamiento.html">Equipamiento</a>
+    <a href="biometricos.html">Biométricos</a>
+    <a href="roles.html">Roles</a>
+    <a href="Pacientes.html">Enfermeras</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h2>Pacientes Registradas</h2>
+
+  <!-- TABLA -->
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Código Enfermera</th>
+        <th>Nombre</th>
+        <th>Apellido Paterno</th>
+        <th>Apellido Materno</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabla"></tbody>
+  </table>
+
+</div>
+
+<script src="js/pacientes.js" defer></script>
+
+</body>
+</html>

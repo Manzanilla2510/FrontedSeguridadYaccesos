@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos Biométricos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+
+  <nav class="menu">
+    <a href="main.html">Inicio</a>
+    <a href="personas.html">Personas</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="dispositivos.html">Dispositivos</a>
+    <a href="equipamiento.html">Equipamiento</a>
+    <a href="biometricos.html">Biométricos</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h2>Datos Biométricos</h2>
+
+  <!-- 🔥 FORMULARIO POST -->
+  <div class="form">
+
+    <input type="text" id="codigoIdentidad" placeholder="Código Identidad (IDE-8)">
+    <input type="text" id="codigo" placeholder="Código Biometría (BIO-7)">
+
+    <select id="tipoDato">
+      <option value="Dactilar">Dactilar</option>
+      <option value="Facial">Facial</option>
+      <option value="Iris">Iris</option>
+    </select>
+
+    <input type="text" id="datoHuella" placeholder="Dato Huella (hash)">
+
+    <input type="date" id="fecha">
+
+    <button onclick="guardarBiometrico()">Guardar</button>
+  </div>
+
+  <br>
+
+  <!-- TABLA -->
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Código Identidad</th>
+        <th>Código</th>
+        <th>Tipo Dato</th>
+        <th>Dato Huella</th>
+        <th>Fecha Registro</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabla"></tbody>
+  </table>
+
+</div>
+
+<script src="js/biometricos.js" defer></script>
+
+</body>
+</html>

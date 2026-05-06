@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+
+  <nav class="menu">
+    <a href="dispositivos.html">Dispositivos</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="personas.html">Personas</a>
+    <a href="roles.html">Roles</a>
+    <a href="Pacientes.html">Pacientes</a>
+    <a href="equipamiento.html">Equipamiento</a>
+    <a href="biometricos.html">Biométricos</a>
+  </nav>
+</header>
+
+<main class="home">
+
+  <h2>Sistema Hospitalario</h2>
+  <p>Panel principal de monitoreo de accesos.</p>
+
+  <!-- 🔥 DASHBOARD ACCESOS -->
+
+  <div class="container">
+
+    <h2>Accesos Exitosos</h2>
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Identidad</th>
+          <th>Código Persona</th>
+          <th>Hora Registro</th>
+          <th>Área</th>
+          <th>Dispositivo</th>
+        </tr>
+      </thead>
+      <tbody id="tablaExitosos"></tbody>
+    </table>
+
+    <br><br>
+
+    <h2>Accesos Denegados</h2>
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Identidad</th>
+          <th>Código Persona</th>
+          <th>Hora Registro</th>
+          <th>Área</th>
+          <th>Dispositivo</th>
+        </tr>
+      </thead>
+      <tbody id="tablaDenegados"></tbody>
+    </table>
+
+  </div>
+
+</main>
+
+<script src="js/acceso.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Roles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1 class="logo">🏥 Hospital Control System</h1>
+
+  <nav class="menu">
+    <a href="main.html">Inicio</a>
+    <a href="personas.html">Personas</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="dispositivos.html">Dispositivos</a>
+    <a href="equipamiento.html">Equipamiento</a>
+    <a href="biometricos.html">Biométricos</a>
+    <a href="roles.html">Roles</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h2>Roles del Sistema</h2>
+
+  <!-- 🔥 FORMULARIO POST -->
+  <div class="form">
+
+    <input type="text" id="codigo" placeholder="Código (ROL-8)">
+    <input type="text" id="nombre" placeholder="Nombre (Farmacéutico)">
+    <input type="text" id="descripcion" placeholder="Descripción (Farmacia)">
+
+    <button onclick="guardarRol()">Guardar</button>
+  </div>
+
+  <br>
+
+  <!-- TABLA -->
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabla"></tbody>
+  </table>
+
+</div>
+
+<script src="js/rol.js" defer></script>
+
+</body>
+</html>
